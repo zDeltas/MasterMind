@@ -146,6 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Affichage.h" />
+    <ClInclude Include="include.h" />
     <ClInclude Include="Joueur.h" />
     <ClInclude Include="Plateau.h" />
   </ItemGroup>

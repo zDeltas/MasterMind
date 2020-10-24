@@ -1,5 +1,5 @@
 #include "Joueur.h"
-#include <conio.h>
+
 using namespace std;
 
 Joueur::Joueur()
@@ -28,9 +28,9 @@ int Joueur::choixCouleur()
 
 	do {
 		
-		Affichage::text("Quelle couleur: ", -1, 1, 1);
+		Affichage::text("Quelle couleur: ", 'w', 1, 1);
 		couleur = _getch();
-		if (couleur <= 56 && couleur >= 49) {
+		if (couleur <= 56 && couleur >= 49 || couleur == 13 || couleur == 8) {
 			Correct = false;
 		}
 		else {
